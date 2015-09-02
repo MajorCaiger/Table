@@ -3,8 +3,8 @@
 return [
     'view_helpers' => [
         'invokables' => [
-            'attributes' => 'Table\View\Helper\Attributes',
-            'table' => 'Table\View\Helper\Table',
+            'attributes' => 'MajorTable\View\Helper\Attributes',
+            'table' => 'MajorTable\View\Helper\Table',
         ]
     ],
     'view_manager' => [
