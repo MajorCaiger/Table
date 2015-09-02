@@ -72,11 +72,13 @@ Example implementation
     ...
 
 Example view
+
     <div>
         <?php echo $this->table($myTable); ?>
     </div>
 
 Example output
+
     <table class="table">
         <thead>
             <tr>
