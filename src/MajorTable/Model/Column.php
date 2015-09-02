@@ -104,6 +104,6 @@ class Column
      */
     public function filter($value)
     {
-        return $this->filterChain->filter($value);
+        return $this->getFilterChain()->filter($value);
     }
 }

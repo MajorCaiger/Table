@@ -1,0 +1,10 @@
+
+<tr>
+    <?php
+    foreach ($table->getColumns() as $name => $column) {
+        ?>
+        <td><?php echo $column->filter($data[$name]); ?></td>
+    <?php
+    }
+    ?>
+</tr>

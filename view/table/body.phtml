@@ -1,26 +1,7 @@
 <tbody>
-    <tr>
-        <?php
-        foreach ($table->getColumns() as $column) {
-            ?>
-            <td <?php echo $this->attributes($column->getAttributes()); ?>><?php echo $column->getTitle(); ?></td>
-        <?php
-        }
-        ?>
-    </tr>
     <?php
     foreach ($table->getData() as $row) {
-        ?>
-        <tr>
-            <?php
-            foreach ($table->getColumns() as $column) {
-                ?>
-                <td <?php echo $this->attributes($column->getAttributes()); ?>><?php echo $column->getTitle(); ?></td>
-            <?php
-            }
-            ?>
-        </tr>
-        <?php
+        echo $this->row($table, $row);
     }
     ?>
 </tbody>
