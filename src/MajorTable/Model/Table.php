@@ -5,7 +5,7 @@
  *
  * @author Rob Caiger <rob@clocal.co.uk>
  */
-namespace Table\Model;
+namespace MajorTable\Model;
 
 /**
  * Table

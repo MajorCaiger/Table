@@ -5,9 +5,10 @@
  *
  * @author Rob Caiger <rob@clocal.co.uk>
  */
-namespace Table\View\Helper;
+namespace MajorTable\View\Helper;
 
 use Zend\Form\View\Helper\AbstractHelper;
+use MajorTable\Model\Table as TableModel;
 
 /**
  * Table
@@ -16,20 +17,18 @@ use Zend\Form\View\Helper\AbstractHelper;
  */
 class Table extends AbstractHelper
 {
-    public function __invoke(\Table\Model\Table $table = null)
+    public function __invoke(TableModel $table = null)
     {
-        if ($table instanceof \Table\Model\Table) {
+        if ($table instanceof TableModel) {
             return $this->render($table);
         }
 
         return $this;
     }
 
-    public function render(\Table\Model\Table $table)
+    public function render(TableModel $table)
     {
-        $html = '';
-
-        $html .= $this->getView()->render('table/header', ['table' => $table]);
+        $html = $this->getView()->render('table/header', ['table' => $table]);
         $html .= $this->getView()->render('table/body', ['table' => $table]);
         $html .= $this->getView()->render('table/footer', ['table' => $table]);
 

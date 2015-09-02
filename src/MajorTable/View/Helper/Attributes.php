@@ -5,7 +5,7 @@
  *
  * @author Rob Caiger <rob@clocal.co.uk>
  */
-namespace Table\View\Helper;
+namespace MajorTable\View\Helper;
 
 use Zend\Form\View\Helper\AbstractHelper;
 
