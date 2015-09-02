@@ -3,7 +3,7 @@ Table builder module for ZF2.
 
 # Installation
 
-composer require major-caiger/table ~0.0.1
+    composer require major-caiger/table ~0.0.2
 
 Add *MajorTable* to the modules list of your application config
 
