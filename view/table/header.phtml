@@ -1,0 +1,12 @@
+<table <?php echo $this->attributes($table->getAttributes()); ?>>
+    <thead>
+        <tr>
+            <?php
+            foreach ($table->getColumns() as $column) {
+                ?>
+                <th <?php echo $this->attributes($column->getAttributes()); ?>><?php echo $column->getTitle(); ?></th>
+                <?php
+            }
+            ?>
+        </tr>
+    </thead>

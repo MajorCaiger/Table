@@ -1,0 +1,21 @@
+{
+    "name": "major-caiger/table",
+    "description": "ZF2 Table Builder Module",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "table builder",
+        "table",
+        "module",
+        "zf2"
+    ],
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework":        "~2.3"
+    },
+    "autoload":          {
+        "psr-0": {
+            "MajorCaiger\\Table\\": "src/"
+        }
+    }
+}
