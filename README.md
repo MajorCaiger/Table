@@ -11,6 +11,7 @@ application.config.php
 
     'modules' => [
         ...
+        'MajorView',
         'MajorTable',
         ...
     ],
