@@ -3,7 +3,6 @@
 return [
     'view_helpers' => [
         'invokables' => [
-            'attributes' => 'MajorTable\View\Helper\Attributes',
             'table' => 'MajorTable\View\Helper\Table',
             'row' => 'MajorTable\View\Helper\Row',
         ]
